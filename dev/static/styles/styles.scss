@@ -1,0 +1,118 @@
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+
+html {
+  font-size: $base-font-size;
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background: #F8F9FA;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd { margin: 0; padding: 0; }
+
+a:not([class]) { text-decoration-skip-ink: auto; }
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select { font: inherit; }
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video,
+textarea { vertical-align: middle; }
+
+textarea { resize: none; }
+
+section { position: relative; }
+
+input,
+select,
+button { outline: none; }
+
+.wrapper {
+  display: block;
+  height: 940px;
+  width: 1920px;
+  margin: 0 auto;
+  background: #0D1010;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 1920px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.05);
+    left: 0;
+    bottom: 210px;
+  }
+}
+
+.content {
+  display: flex;
+}
+
+.container-left {
+  width: 533px;
+  height: 860px;
+  float: left;
+  position: relative;
+
+    &:before {
+      content: "";
+      height: 860px;
+      width: 1px;
+      background: rgba(255, 255, 255, 0.05);
+      position: absolute;
+      left: 240px;
+    }
+}
+
+
+
+//Модули
+@import "modules/modules";

@@ -1,0 +1,101 @@
+.header {
+	display: flex;
+	height: 80px;
+	background: rgba(13, 16, 16, 0.66);
+	backdrop-filter: blur(88px);
+	position: relative;
+	top: 1px;
+	z-index: 2;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.11);
+
+	& .header__main {
+		width: 1440px;
+		height: inherit;
+		display: flex;
+		align-items: center;
+		border-right: 1px solid rgba(255, 255, 255, 0.11);
+		border-left: 1px solid rgba(255, 255, 255, 0.11);
+
+		& .header__main__select {
+			font-family: 'Work Sans';
+			font-style: normal;
+			font-size: 14px;
+			color: rgb(255, 255, 255);
+			padding: 32px 0 30px 59px;
+			position: relative;
+
+			&:after {
+				content: "";
+				display: block;
+				position: absolute;
+				width: 10px;
+				height: 6px;
+				background: url('/static/images/general/arrow-down.svg');
+				background-size: contain;
+				background-repeat: no-repeat;
+				top: 39px;
+				right: -18px;
+			}
+		}
+
+		& .header__main__contacts {
+			font-family: Work Sans;
+			font-style: normal;
+			font-weight: 800;
+			font-size: 14px;
+			color: #FFFFFF;
+			margin-left: auto;
+			padding: 29px 59px 31px 0;
+			position: relative;
+
+			&:before {
+				content: "";
+				display: block;
+				position: absolute;
+				width: 18px;
+				height: 18px;
+				background: url('/static/images/general/telephone.svg');
+				background-size: contain;
+				background-repeat: no-repeat;
+				left: -25px;
+				
+			}
+		}
+	}
+
+	& .header__menu {
+		width: 240px;
+		height: inherit;
+		padding: 28px 79px 32px 122px;
+		position: relative;
+		font-family: 'Work Sans';
+		font-style: normal;
+		font-weight: 800;
+		font-size: 14px;
+		color: #FFFFFF;
+
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 29px;
+			height: 2px;
+			background: #FFFFFF;
+			left: 83px;
+			top: 34px;
+		}
+
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 29px;
+			height: 2px;
+			background: #FFFFFF;
+			left: 83px;
+			top: 41px;
+		}
+
+	}
+	
+}

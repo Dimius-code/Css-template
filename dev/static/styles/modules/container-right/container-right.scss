@@ -1,0 +1,128 @@
+.container-right {
+	width: 1387px;
+	height: 940px;
+	background: url('/static/images/general/main-shape.svg'), url('/static/images/general/main-img.png');
+	background-size: contain;
+	float: right;
+	position: relative;
+	top: -80px;
+  
+	  &:before {
+		content: "";
+		height: 859px;
+		width: 1px;
+		background: rgba(255, 255, 255, 0.05);
+		position: absolute;
+		left: 428px;
+		bottom: 0;
+	  }
+  
+	  &:after {
+		content: "";
+		height: 859px;
+		width: 1px;
+		background: rgba(255, 255, 255, 0.05);
+		position: absolute;
+		right: 240px;
+		bottom: 0;
+	  }
+
+	& .container-right__subscribes {
+		width: 46px;
+		height: 220px;
+		position: absolute;
+		right: 97px;
+		top: 625px;
+
+		&__facebook {
+			width: 46px;
+			height: 46px;
+			margin-bottom: 12px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: rgba(13, 16, 16, 0.11);
+			border: 1px solid rgba(255, 255, 255, 0.11);
+			backdrop-filter: blur(11px);
+			border-radius: 50%;
+
+			&:before{
+				content:"";
+				display: block;
+				width: 9px;
+				height: 16px;
+				background: url('/static/images/general/facebook.svg');
+			}
+
+		}
+
+		&__twitter {
+			width: 46px;
+			height: 46px;
+			margin-bottom: 12px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: rgba(13, 16, 16, 0.11);
+			border: 1px solid rgba(255, 255, 255, 0.11);
+			backdrop-filter: blur(11px);
+			border-radius: 50%;
+
+			&:before{
+				content:"";
+				display: block;
+				width: 13px;
+				height: 11px;
+				background: url('/static/images/general/twitter.svg');
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+		}
+
+		&__instagram {
+			width: 46px;
+			height: 46px;
+			margin-bottom: 12px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: rgba(13, 16, 16, 0.11);
+			border: 1px solid rgba(255, 255, 255, 0.11);
+			backdrop-filter: blur(11px);
+			border-radius: 50%;
+
+			&:before{
+				content:"";
+				display: block;
+				width: 13px;
+				height: 13px;
+				background: url('/static/images/general/instagram.svg');
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+			
+		}
+
+		&__yep {
+			width: 46px;
+			height: 46px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: rgba(13, 16, 16, 0.11);
+			border: 1px solid rgba(255, 255, 255, 0.11);
+			backdrop-filter: blur(11px);
+			border-radius: 50%;
+
+			&:before{
+				content:"";
+				display: block;
+				width: 16px;
+				height: 16px;
+				background: url('/static/images/general/yelp.svg');
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+		}
+	}
+  }
